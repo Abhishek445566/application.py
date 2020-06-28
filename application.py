@@ -10,3 +10,7 @@ app=Flask(__name__)
   def hello():
     name = request.form.get("name")
     return render_template("hello.html",name=name)
+
+@app.route("/more")
+  def more():
+      return render_template("more.html")
