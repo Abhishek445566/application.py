@@ -9,3 +9,8 @@ app=Flask(__name__)
 @app.route("/services")
   def service():
     return return_template("service.html")
+  
+  @app.route("/appi")
+  def appi():
+    return return_template("more.html")
+
